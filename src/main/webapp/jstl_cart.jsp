@@ -45,6 +45,8 @@
 <%--if/else--%>
 <c:choose>
 <%--    if  --%>
+<%--    <% request.setAttribute("boolean_expression_1", true); %>--%>
+
     <c:when test="${boolean_expression_1}">
         <p>boolean_expression_1 was true</p>
     </c:when>
@@ -59,6 +61,15 @@
         <p>none of the above tests were true</p>
     </c:otherwise>
 </c:choose>
+
+<%--establishes int array of numbers--%>
+<% request.setAttribute("numbers", new int[]{1, 2, 3, 4, 5, 6, 7}); %>
+<ul>
+<%--    prints each number in array  --%>
+    <c:forEach items="${numbers}" var="n">
+        <li>${n}</li>
+    </c:forEach>
+</ul>
 
 </body>
 </html>
