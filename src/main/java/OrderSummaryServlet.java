@@ -15,8 +15,8 @@ public class OrderSummaryServlet extends HttpServlet {
         String name = request.getParameter("name");
         String quantity = request.getParameter("quantity");
         out.println("You have requested " + name + "." +
-                "<br><br>" +
-                "You have requested " + quantity + "."
+                    "<br><br>" +
+                    "You have requested " + quantity + "."
         );
     }
 

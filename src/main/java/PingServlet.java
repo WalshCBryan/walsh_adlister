@@ -12,8 +12,9 @@ public class PingServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setHeader("Content-type", "text/html");
         PrintWriter out = response.getWriter();
-        out.println("<form method=\"get\" action=\"/pong\">\n" +
-                "    <input type=\"submit\">\t" +
-                "</form>");;
+        out.println("<h1>PING</h1>" +
+                    "<form method=\"get\" action=\"/pong\">\n" +
+                    "<input type=\"submit\">\t" +
+                    "</form>");;
     }
 }
