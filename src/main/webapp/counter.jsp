@@ -6,14 +6,21 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%--instance variable definition--%>
 <%! int counter = 0; %>
+
+<%--code to execute on page load--%>
 <% counter += 1; %>
+
+
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
 
+<%--evaluates result of code inside angle brackets--%>
 <h1>The current count is <%= counter %>.</h1>
 
 View the page source!
