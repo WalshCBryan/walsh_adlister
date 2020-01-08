@@ -42,5 +42,23 @@
     <%--    end of if/else--%>
 </c:choose>
 
+<%--if/else--%>
+<c:choose>
+<%--    if  --%>
+    <c:when test="${boolean_expression_1}">
+        <p>boolean_expression_1 was true</p>
+    </c:when>
+
+<%--    else if  --%>
+    <c:when test="${boolean_expression_2}">
+        <p>boolean_expression_1 was false, and boolean_expression_2 was true</p>
+    </c:when>
+
+<%--    final else  --%>
+    <c:otherwise>
+        <p>none of the above tests were true</p>
+    </c:otherwise>
+</c:choose>
+
 </body>
 </html>
